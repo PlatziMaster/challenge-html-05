@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-image: url(https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?cs=srgb&dl=agua-al-aire-libre-amanecer-arbol-258109.jpg&fm=jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+main {
+  display: grid;
+  height: 90vh;
+  
+}
+
+.item {
+  place-self: center;
+}
+
+.form {
+  width: 450px;
+  background-color: white;
+  padding: 1em 1.5em;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+h3 {
+  margin-bottom: 5px;
+  color: #451ba7;
+}
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #451ba7;
+  margin-bottom: 2em;
+}
+
+button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #451ba7;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1em;
+  transition: .3s;
+}
+button:hover {
+  background-color: #4c00ff;
+}
