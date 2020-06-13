@@ -1,0 +1,116 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+:root {
+    --colorLabel: #265135;
+    --colorBtn:#95ca3e;
+    --colorBtnShadow: #408E42;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: linear-gradient(to right, #1d3743, #1d3e4e, #1d4559, #1d4b65, #1e5271);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+main {
+    display: grid;
+    grid-template: 150px 1fr 40px 150px/ 20rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-conten {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+.header-top img {
+    width: 90px;
+}
+
+.header-top h1 {
+    color: white;
+}
+
+.container {
+  padding: 15px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 10px;
+  opacity: .8;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container label {
+      color: -var(--colorLabel);
+      font-weight: bold;
+      margin: 5px;
+}
+
+.container input {
+      padding: 5px;
+      box-decoration-break: var(--colorLabel);
+}
+
+.pass {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--colorBtn);
+    padding: 15px 25px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+  box-shadow: 0 0 10px var(--colorBtnShadow);
+  transition: .8;
+}
+
+span {
+    text-align: center;
+}
+
+span a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
