@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platzi Master</title> 
+  <style>
+    /* Aquí van tus estilos */
+    * {
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      min-width: 360px;
+      height: 100vh;
+      min-height: 480px;
+      background-image: url('https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body:after {
+      content: '';
+      background-image: linear-gradient(transparent,85%, #8C52FF);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    h1 {
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 3px 3px 6px rgba(0,0,0,0.12);
+    }
+
+    .card__body {
+      color: #8C52FF;
+      min-height: 220px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card__body label {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card__body input {
+      border: none;
+      border-bottom: 2px solid #8C52FF;
+      padding: 4px 0px;
+      outline: none;
+    }
+
+    .card__body label,  .card__body input {
+      width: 100%;
+    }
+
+    .card__footer {
+      min-height: 50px;
+      background-color: #8C52FF;
+      border-radius: 0px 0px 4px 4px;
+    }
+
+    .card__footer input {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 50px;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    .card__footer:hover input {
+      text-decoration: underline;
+    }
+
+    .mb {
+      margin-bottom: 24px;
+    }
+
+    ::placeholder {
+      color: #b1b1b1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 class="mb">PLATZI MASTER</h1>
+  <form class='card mb'>
+      <div class="card__body">
+            <label>Email</label>
+            <input type='email' name='email' placeholder="app@mail.com" class="mb">
+            <label>Password</label>
+            <input type='password' name='password' placeholder="*******">
+      </div>
+      <div class='card__footer'>
+        <input type="submit" value="Iniciar Sesión">
+      </div>
+  </form>
+  <a href="#">¿Olvidate tu contraseña?</a>
+</body>
+</html>
