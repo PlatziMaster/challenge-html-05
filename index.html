@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The dark side of the code</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        background-image: url('https://i.pinimg.com/originals/ae/3f/d8/ae3fd89d5c0a3cdffbf56770d371503b.jpg');
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: darken;
+        min-height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+      }
+
+      .container {
+        background-color: white;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 250px;
+        height: 200px;
+        position: relative;
+      }
+
+      .form label,
+      .form p {
+        color: #7540d4;
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 10px;
+      }
+
+      .form input {
+        padding-top: 10px;
+        border: 0;
+        border-bottom: 2px solid #7540d4;
+        margin-bottom: 20px;
+        outline: none;
+      }
+
+      a {
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+      }
+
+      button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #7540d4;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        width: 100%;
+        height: 60px;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Platzi Master</h1>
+    <div class="container">
+      <form class="form">
+        <label>Nombre</label>
+        <input type="text" />
+        <label>Contraseña</label>
+        <input type="password" />
+        <button>Iniciar Sesión</button>
+        <br />
+      </form>
+    </div>
+    <a href="">¿Olvidaste tu contraseña?</a>
+  </body>
+</html>
