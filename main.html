@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            background-image: url(https://cdn.pixabay.com/photo/2015/09/09/16/05/forest-931706_960_720.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header h3 {
+            font-family: sans-serif;
+            font-size: 36px;
+            color: white
+        }
+
+        .login {
+            width: 400px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: beige;
+        }
+
+        .login__form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .login__form--text {
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color:blueviolet;
+            margin: 10px 0;
+        }
+
+        .input {
+            border: none;
+            border-bottom: 2px solid blueviolet;
+            background-color: beige;
+            height: 25px;
+            margin-bottom: 5px;
+        }
+
+        .button {
+            border: none;
+            margin-top: 5px;
+            width: 400px;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            background-color: blueviolet;
+        }
+
+        .footer {
+            color: white;
+            margin: 20px;    
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header class="header">
+            <h3>Platzi Master</h3>
+    </header>
+    <section class="login">
+        
+        <form class="login__form" action="">
+            <p class="login__form--text">Nombre</p>
+            <input class="input" type="text" placeholder="platzi@platzi.com">
+            <p class="login__form--text">Contraseña</p>
+            <input class="input" type="text" placeholder="********">
+        </form>
+        <button class="button">Iniciar Sesión</button>
+
+    </section>
+    <footer class="footer">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+
+    </footer>
+        
+    
+</body>
+</html>
