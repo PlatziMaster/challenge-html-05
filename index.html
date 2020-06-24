@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styleMain.css">
+    <style>
+        body {
+            margin: 0;
+            border: 0;
+            background-image: url('https://i.imgur.com/voEtn3w.jpg');
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+            padding-top: 3%;
+        }
+        
+        .login-container{
+            display: grid;
+            grid-template-rows: 15% 70% 15%;
+            justify-items: center;
+            align-items: center;
+            gap:5px
+        }
+        
+        .dates-container{
+            margin: 10px;
+            padding: 30px;
+            padding-bottom: 5px;
+            height: 80%;
+            font-size: 2em;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            display: grid;
+            /* grid-template-rows: 10% 10% 10% 10% 20%; */
+            grid-auto-rows: max-content;
+            gap: 10px;
+            grid-template-areas: 
+            "A"
+            "B"
+            "C"
+            "D"
+            "E";
+            justify-items: center;
+        }
+        
+        .title h1 {
+            color: white;
+            font-size: 3em;
+        }
+        
+        .hname{
+            grid-area: A;
+            margin: 5px;
+            border: 0;
+            color:#1c3643;
+            justify-self: start;
+            align-self: center;
+        }
+        
+        .nickname{
+            grid-area: B;
+            margin: 10px;
+            border: 0px;
+            padding: 10px;
+            width: 80%;
+            font-size: .7em;
+            border-bottom: 2px solid #1c3643;
+            justify-self: start;
+            align-self: center;
+        }
+        
+        .hpass {
+            grid-area: C;
+            margin: 5px;
+            border: 0;
+            color:#1c3643;
+            justify-self: start;
+            align-self: center;
+        }
+        
+        .pass{
+            grid-area: D;
+            margin: 10px;
+            border: 0;
+            padding: 10px;
+            font-size: .7em;
+            width: 80%;
+            border-bottom: 2px solid #1c3643;
+            justify-self: start;
+            align-self: center;
+        }
+        
+        .button-login{
+            grid-area: E;
+            margin: 0;
+            border: 0;
+            align-self: center;
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        .button-login:hover {
+            box-shadow: 0px 7px 7px 0px #3b6a81;
+        }
+        
+        .button-login h2{
+            margin: 0px;
+            border: 0px;
+            color: white;
+            font-size: 1em;
+            text-align: center;
+        } 
+        
+        .button-login{
+            margin: 10px;
+            border: 0px;
+            padding: 20px;
+            background:linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+            cursor: pointer;
+        }
+        .button-login a{
+            text-decoration: none;
+        }
+
+        .msj-password{
+            background-color: rgba(255, 255, 255,.2);
+        }
+        
+        .msj-password h2{
+            color: white;
+            text-decoration: none;
+            font-size: 2em;
+        }
+        
+        .msj-password a{
+            text-decoration: none;
+        }
+
+        .msj-password a:hover {
+            text-decoration: underline;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="login-container">
+        <div class="title"> 
+            <h1>Tech </h1>
+        </div>
+        
+        <section class="dates-container">
+            <h3 class="hname">Nombre</h3>
+            <input class="nickname" placeholder="user@email.com">
+            <h3 class="hpass">Contrase&ntilde;a</h3>
+            <input class="pass" type="password" placeholder="***************">
+            <div  class="button-login">
+                <a href=""><h2>Iniciar Sesión</h2></a>
+            </div>
+        </section>
+
+        <div class="msj-password">
+            <a href=""><h2>¿Olvidaste tu contrase&ntilde;a?</h2></a>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
